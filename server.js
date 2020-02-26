@@ -1,6 +1,6 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
-var mysql = require("mysql");
+var mysql = require("mysql2");
 var app = express();
 
 // Application port to set by Heroku or set to 9001
