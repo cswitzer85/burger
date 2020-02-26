@@ -1,0 +1,20 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Burger is an application that takes users input to make a list of burgers they'd like to eat. Once submitted the burger name, will appear on the left hand side of the screen in a list. Each burger will also have a \"Devour\" button that will send that particular burger to the other side of the screen.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cswitzer85/burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cswitzer85/burger/issues"
+  },
+  "homepage": "https://github.com/cswitzer85/burger#readme"
+}
