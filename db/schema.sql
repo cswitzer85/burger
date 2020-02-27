@@ -5,7 +5,16 @@ USE burger_db;
 CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
-	burger_name varchar(20) NOT NULL,
-	devoured boolean,
+	burger_name varchar(50) NOT NULL,
+	devoured boolean default false,
 	PRIMARY KEY (id)
 );
+
+-- USE burger_db;
+
+-- insert into burgers (burger_name)
+--     values  ("The Royale with Cheese"),
+--             ("Double Cheese Bacon Burger"),
+--             ("Cluckin' Hot Reaper Chicken Burger");
+
+-- SELECT * FROM burgers;
