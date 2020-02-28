@@ -1,37 +1,38 @@
-<h1>It's Burgers Thyme!</h1>
-<div class="row">
-<div class="col-6", "leftSide">
-    <h2>Burgers that you need to devour!</h2>
+<h1>It's Burgers Thyme!!!</h1>
 
-    <ul class="leftSide">
-        {{#each burgers}}
-            {{#unless devoured}}
-                {{> burgers/burger-block devour=true}}
-            {{/unless}}
-        {{/each}}
-    </ul>
-</div>
-
-<div class="col-6", "rightSide">
-
-    <h2>Burgers that are devoured!</h2>
-
-    <ul class="rightSide">
-        {{#each burgers}}
-            {{#if devoured}}
-                {{> burgers/burger-block devour=false}}
-            {{/if}}
-        {{/each}}
-    </ul>
-</div>
-</div>
-
-<h2>Add a Burger</h2>
 <form class="create-form">
-
+<h2>Add a Burger</h2>
     <div class="form-group">
         <label for="brgr">Add a Burger:</label>
         <input type="text" id="brgr" name="burger_name">
     </div>
     <button type="submit">Add My Burger</button>
 </form>
+
+<div class="row">
+    <div class="col-6">
+        <div class="sticky">
+            <h2 class="leftSide" style="background-color: darkslategray;">Burgers that you still need to devour!</h2>
+        </div>
+        <ul class="leftSide">
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="col-6">
+        <div class="sticky">
+            <h2 class="rightSide" style="background-color: darkslategray;">Burgers that you have devoured!</h2>
+        </div>
+        <ul class="rightSide">
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>

@@ -1,23 +1,47 @@
 body {
     background-image: url(../img/Bobs.png);
-    background-size: contain;
+    background-repeat:unset;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Schoolbell', cursive;
     color: white;
-    padding: 5%;
+    padding: 2%;
+}
+.create-form{
+    padding-left: 41%;
+    padding-bottom: 1%;
 }
 
 h1 {
     text-align: center;
-    padding-bottom: 5%;
+    background-color: darkslategray;
+    padding: 3%;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 ul {
     list-style-type: none;
+    font-size: 20px;
 }
 
 .leftSide {
     color: yellow;
+    margin-right: -2%;
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .rightSide {
     color: red;
+    text-align: right;
+    margin-left: -2%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
