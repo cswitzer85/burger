@@ -2,11 +2,12 @@
 var express = require("express");
 
 // Import `burger.js`
-var importBurgerJs = require("../models/burger.js");
+var burger = require("../models/burger.js");
 
 // Create the `router` for the app, and export the `router` at the end of your file.
 var router = express.Router();
 
+// Get (All)
 router.get("/", function(req, res) {
     burger.all(function(data) {
       var hbsObject = {
@@ -17,6 +18,7 @@ router.get("/", function(req, res) {
     });
   });
   
+  // Post (Create)
   router.post("/api/burgers", function(req, res) {
     burger.create(["name", "devoured"], [req.body.name, req.body.devoured], function(result) {
       // Send back ID for new burger
@@ -24,6 +26,7 @@ router.get("/", function(req, res) {
     });
   });
   
+  // Put (Update)
   router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
