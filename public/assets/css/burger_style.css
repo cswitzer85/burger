@@ -1,13 +1,23 @@
 body {
     background-image: url(../img/Bobs.png);
-    background-size: cover;
+    background-size: contain;
     color: white;
+    padding: 5%;
 }
 
 h1 {
     text-align: center;
+    padding-bottom: 5%;
 }
 
 ul {
     list-style-type: none;
+}
+
+.leftSide {
+    color: yellow;
+}
+
+.rightSide {
+    color: red;
 }

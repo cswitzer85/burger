@@ -3,7 +3,7 @@
 <div class="col-6", "leftSide">
     <h2>Burgers that you need to devour!</h2>
 
-    <ul>
+    <ul class="leftSide">
         {{#each burgers}}
             {{#unless devoured}}
                 {{> burgers/burger-block devour=true}}
@@ -16,7 +16,7 @@
 
     <h2>Burgers that are devoured!</h2>
 
-    <ul>
+    <ul class="rightSide">
         {{#each burgers}}
             {{#if devoured}}
                 {{> burgers/burger-block devour=false}}
@@ -30,7 +30,7 @@
 <form class="create-form">
 
     <div class="form-group">
-        <label for="brgr">Add a Burger to the List:</label>
+        <label for="brgr">Add a Burger:</label>
         <input type="text" id="brgr" name="burger_name">
     </div>
     <button type="submit">Add My Burger</button>
