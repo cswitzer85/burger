@@ -1,0 +1,13 @@
+body {
+    background-image: url(../img/Bobs.png);
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
