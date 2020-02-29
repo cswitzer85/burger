@@ -14,18 +14,18 @@ Burger is an application that takes users input to make a list of burgers they'd
 <!-- * [Acknowledgements](#Acknowledgements) -->
 
 ## About the Project
-Burger is a hosted project that allows the user to add any type of burger they can imagine to a list, along with a button labled "devour". Once the button is pressed, the burger is defined as being devoured and is moved to another location on the HTML page. This page demonstrates the practice of manipulating the HTML page by using express-handlebars and a database to turn an otherwise static HTML page into a basic, yet dynamic HTML experience.
+Burger is a hosted project that allows the user to add any type of burger they can imagine to a list, along with a button labled "devour". Once the button is pressed, the burger is defined as being devoured and is moved to another location on the HTML page. This page demonstrates the practice of manipulating the HTML page by using express-handlebars and a database to turn an otherwise static HTML page into a basic, yet dynamic HTML experience. To make things more interesting, I've included all of the burger of the day names from the TV series Bob's Burgers. Bon Appitit!
 
 ## Getting Started
 This project is hosted by heroku, simply navigate to the URL in your favoirte browser and add some burgers to your list.
 
 ## Usage
 On the landing page you will be presented with an input box. Type the name of a burger in the box and submit your input.
-<!-- ![alt text](URL goes here) -->
+![alt text](https://github.com/cswitzer85/burger/blob/master/Assets/BurgerScreenShot.png?raw=true)
 Once you have submitted the buger, it will be added to a list on the left hand side of the screen, along with a button.
-<!-- ![alt text](URL goes here) -->
+  
 Click the "devour" button to re-define that particular buger as "devoured" and it will then be sent to the right side of the screen.
-<!-- ![alt text](URL goes here) -->
+  
 Repeat until you pass out or being experiencing "the burger sweats"
 
 ## Contributing
