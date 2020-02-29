@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/cswitzer85/burger.git"
   },
-  "author": "",
+  "author": "Cody Switzer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cswitzer85/burger/issues"
@@ -22,5 +22,8 @@
     "express-handlebars": "^3.1.0",
     "mysql": "2.18.1",
     "mysql2": "^2.1.0"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }

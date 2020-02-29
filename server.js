@@ -1,10 +1,10 @@
 var express = require("express");
 
+// Application port to set by Heroku or set to 9001
 var PORT = process.env.PORT || 9001;
 
 var app = express();
 
-// Application port to set by Heroku or set to 9001
 
 // Use the express.static middleware to serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
