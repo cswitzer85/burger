@@ -5,6 +5,7 @@ var PORT = process.env.PORT || 9001;
 
 var app = express();
 
+var timeout = require('connect-timeout');
 
 // Use the express.static middleware to serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -26,6 +27,8 @@ var routes = require("./controllers/burger_controller.js");
 
 app.use(routes);
 
+//set 5 second timeout
+app.use(timeout('5s'))
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {
 	// Log (server-side) when our server has started
