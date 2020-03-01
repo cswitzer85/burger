@@ -1,57 +1,62 @@
 body {
-    background-image: url(../img/Bobs.png);
-    background-repeat:unset;
-    background-attachment: fixed;
-    background-size: contain;
-    font-family: 'Schoolbell', cursive;
-    color: white;
-    padding: 2%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+	background-image: url(../img/Bobs.png);
+	background-repeat: unset;
+	background-attachment: fixed;
+	background-size: contain;
+	font-family: 'Schoolbell', cursive;
+	color: white;
+	padding: 2%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
-.create-form{
-    padding-left: 41%;
-    padding-bottom: 1%;
+
+.create-form {
+	padding-left: 41%;
+	padding-bottom: 1%;
 }
 
 h1 {
-    text-align: center;
-    background-color: darkslategray;
-    padding: 3%;
+	text-align: center;
+	background-color: darkslategray;
+	padding: 3%;
 }
 
 div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 ul {
-    list-style-type: none;
-    font-size: 20px;
+	list-style-type: none;
+	font-size: 20px;
 }
 
 .leftSide {
-    color: yellow;
-    margin-right: -2%;
-    padding-left: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+	color: yellow;
+	margin-right: -2%;
+	padding-left: 10%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 .rightSide {
-    color: red;
-    text-align: right;
-    margin-left: -2%;
-    padding-right: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+	color: red;
+	text-align: right;
+	margin-left: -2%;
+	padding-right: 10%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 @media (min-width: 100px) and (max-width: 767px) {
-    body {
-        background-image: url(../img/KuchiKopiBgImage.jpg);
-        background-size: cover;
-    }    
+	body {
+		background-image: url(../img/KuchiKopiBgImage.jpg);
+		background-size: cover;
+	}
+
+	ul {
+		font-size: 30px;
+	}
 }
