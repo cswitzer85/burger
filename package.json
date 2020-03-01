@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/cswitzer85/burger#readme",
   "dependencies": {
+    "connect-timeout": "^1.9.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "mysql": "2.18.1",
-    "mysql2": "^2.1.0",
-    "connect-timeout": "1.9.0"
+    "mysql2": "^2.1.0"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"

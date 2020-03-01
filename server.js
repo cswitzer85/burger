@@ -28,7 +28,7 @@ var routes = require("./controllers/burger_controller.js");
 app.use(routes);
 
 //set 5 second timeout
-app.use(timeout('5s'))
+app.use(timeout('15s'))
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {
 	// Log (server-side) when our server has started
