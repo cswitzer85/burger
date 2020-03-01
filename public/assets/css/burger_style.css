@@ -2,10 +2,13 @@ body {
     background-image: url(../img/Bobs.png);
     background-repeat:unset;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     font-family: 'Schoolbell', cursive;
     color: white;
     padding: 2%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 .create-form{
     padding-left: 41%;
@@ -44,4 +47,11 @@ ul {
     padding-right: 10%;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+    body {
+        background-image: url(../img/KuchiKopiBgImage.jpg);
+        background-size: cover;
+    }    
 }
