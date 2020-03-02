@@ -1,13 +1,18 @@
 // Inside the `connection.js` file, setup the code to connect Node to MySQL.
 var mysql = require("mysql");
 
-var connection = mysql.createConnection({
-  host: "us-cdbr-iron-east-04.cleardb.net",
-  port: 3306,
-  user: "bd7f84e8cb368c",
-  password: "67a9364e",
-  database: "heroku_62f8433e7ec3991"
-});
+if(process.env.CLEARDB_CHARCOAL_URL){
+  var connection = mysql.createConnection(process.env.CLEARDB_CHARCOAL_URL)
+} else{
+
+  var connection = mysql.createConnection({
+    host: "us-cdbr-iron-east-04.cleardb.net",
+    port: 3306,
+    user: "bd7f84e8cb368c",
+    password: "67a9364e",
+    database: "heroku_62f8433e7ec3991"
+  });
+}
 
 // Make connection.
 connection.connect(function(err) {
