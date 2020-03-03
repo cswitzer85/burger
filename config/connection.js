@@ -1,8 +1,8 @@
 // Inside the `connection.js` file, setup the code to connect Node to MySQL.
 var mysql = require("mysql");
 
-if(process.env.CLEARDB_CHARCOAL_URL){
-  var connection = mysql.createConnection(process.env.CLEARDB_CHARCOAL_URL)
+if(process.env.JAWSDB_URL){
+  var connection = mysql.createConnection(process.env.JAWSDB_URL)
 } else{
 
   var connection = mysql.createConnection({
